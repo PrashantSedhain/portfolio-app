@@ -15,14 +15,14 @@ const NavbarComponent = () => {
           <Nav.Link href="/features">Features</Nav.Link>
           <Nav.Link href="/pricing">Pricing</Nav.Link>
           <NavDropdown title="Portfolio" id="collasible-nav-dropdown">
-            <NavDropdown.Item href="/portfolio/weddings">
-              Weddings
+            <NavDropdown.Item href="/portfolio/boudoir">
+              Boudoir
             </NavDropdown.Item>
-            <NavDropdown.Item href="/portfolio/birthdays">
-              Birthdays
+            <NavDropdown.Item href="/portfolio/maternity">
+              Maternity
             </NavDropdown.Item>
-            <NavDropdown.Item href="/portfolio/engagements">
-              Engagements
+            <NavDropdown.Item href="/portfolio/couples">
+              Couples
             </NavDropdown.Item>
             <NavDropdown.Divider />
             <NavDropdown.Item href="action/3.4">

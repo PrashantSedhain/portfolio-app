@@ -1,8 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Test from "../src/components/Test";
+import PhotoGallery from "./components/PhotoGallery";
 import Home from "../src/screens/Home";
+import About from "../src/screens/About";
+
 import NavbarComponent from "../src/components/Navbar";
+import Contact from "./screens/Contact";
 function App() {
   return (
     <Router>
@@ -25,11 +28,14 @@ function App() {
         {/* A <Switch> looks through its children <Route>s and
           renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/portfolio/weddings">
-            <Test />
+          <Route path="/portfolio/boudoir">
+            <PhotoGallery />
           </Route>
-          <Route path="/users">
-            <Users />
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/contact">
+            <Contact />
           </Route>
           <Route path="/">
             <Home />
@@ -38,14 +44,6 @@ function App() {
       </div>
     </Router>
   );
-}
-
-function About() {
-  return <h2>About</h2>;
-}
-
-function Users() {
-  return <h2>Users</h2>;
 }
 
 export default App;
