@@ -1,9 +1,9 @@
 import React from "react";
-
+import styles from "./Navbar.css";
 const Navbar = () => {
   return (
     <div>
-      <text>Yo, I am navbar</text>
+      <text className={styles.textStyle}>Yo, I am navbar</text>
     </div>
   );
 };
