@@ -14,7 +14,7 @@ const NavbarComponent = () => {
         Meraki By Liz Photography
       </Navbar.Brand>
       <Navbar.Toggle
-        style={{ border: "none" }}
+        style={{ width: "14%", border: "none" }}
         onClick={() => {
           setOpen(!isOpen);
         }}
@@ -22,9 +22,8 @@ const NavbarComponent = () => {
       >
         <Hamburger
           label="Show menu"
-          hideOutline={true}
           color="#4FD1C5"
-          distance="lg"
+          //   distance="sm"
           toggled={isOpen}
           toggle={setOpen}
         />
