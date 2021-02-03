@@ -6,28 +6,21 @@ const NavbarComponent = () => {
   const [isOpen, setOpen] = useState(false);
 
   return (
-    <Navbar collapseOnSelect expand="sm" bg="light">
+    <Navbar collapseOnSelect expand="sm" bg="light" expanded={isOpen}>
       <Navbar.Brand
-        style={{ fontFamily: "orbitron", fontStyle: "italic", fontSize: 22 }}
+        style={{ fontFamily: "orbitron", fontStyle: "italic", fontSize: 20 }}
         href="/"
       >
-        Meraki By Liz Photography
+        Liz Photography
       </Navbar.Brand>
-      <Navbar.Toggle
-        style={{ width: "14%", border: "none" }}
-        onClick={() => {
-          setOpen(!isOpen);
-        }}
-        aria-controls="responsive-navbar-nav"
-      >
-        <Hamburger
-          label="Show menu"
-          color="#4FD1C5"
-          //   distance="sm"
-          toggled={isOpen}
-          toggle={setOpen}
-        />
-      </Navbar.Toggle>
+
+      <Hamburger
+        label="Show menu"
+        color="#4FD1C5"
+        distance="sm"
+        toggled={isOpen}
+        toggle={setOpen}
+      />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
           <Nav.Link href="/features">Features</Nav.Link>
