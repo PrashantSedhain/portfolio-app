@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
+import Hamburger from "hamburger-react";
+
 const NavbarComponent = () => {
+  const [isOpen, setOpen] = useState(false);
+
   return (
     <Navbar collapseOnSelect expand="sm" bg="light">
       <Navbar.Brand
@@ -9,7 +13,22 @@ const NavbarComponent = () => {
       >
         Meraki By Liz Photography
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar.Toggle
+        style={{ border: "none" }}
+        onClick={() => {
+          setOpen(!isOpen);
+        }}
+        aria-controls="responsive-navbar-nav"
+      >
+        <Hamburger
+          label="Show menu"
+          hideOutline={true}
+          color="#4FD1C5"
+          distance="lg"
+          toggled={isOpen}
+          toggle={setOpen}
+        />
+      </Navbar.Toggle>
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
           <Nav.Link href="/features">Features</Nav.Link>
