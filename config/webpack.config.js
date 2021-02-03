@@ -389,17 +389,8 @@ module.exports = function (webpackEnv) {
             },
             //Added from https://www.robinwieruch.de/react-css-modules
             {
-              test: /\.css$/i,
-              exclude: /node_modules/,
-              use: [
-                "style-loader",
-                {
-                  loader: "css-loader",
-                  options: {
-                    modules: true,
-                  },
-                },
-              ],
+              test: /\.css$/,
+              use: ["style-loader", "css-loader"],
             },
             // Process application JS with Babel.
             // The preset includes JSX, Flow, TypeScript, and some ESnext features.
