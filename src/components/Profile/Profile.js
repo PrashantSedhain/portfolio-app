@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Profile.module.css";
-
+import Cards from "../Cards/Cards";
 const Profile = () => {
   return (
     <div>
@@ -30,15 +30,42 @@ const Profile = () => {
         </div>
       </header>
 
-      <section className="py-5">
+      {/* <section className="py-5">
         <div className="container">
-          <h2 className="font-weight-light">Page Content</h2>
+          <h2 className="font-weight-light">Our Services</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Repellendus ab nulla dolorum autem nisi officiis blanditiis
             voluptatem hic, assumenda aspernatur facere ipsam nemo ratione
             cumque magnam enim fugiat reprehenderit expedita.
           </p>
+        </div>
+      </section> */}
+      <section>
+        <div className="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <Cards
+                title="Boudoir"
+                description="Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard."
+                classToApply={0}
+              />
+            </div>
+            <div class="col-sm-4">
+              <Cards
+                title="Couple"
+                description="Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard."
+                classToApply={1}
+              />
+            </div>
+            <div class="col-sm-4">
+              <Cards
+                title="Maternity"
+                description="Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard."
+                classToApply={2}
+              />
+            </div>
+          </div>
         </div>
       </section>
     </div>
