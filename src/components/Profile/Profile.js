@@ -43,6 +43,12 @@ const Profile = () => {
       </section> */}
       <section>
         <div className="container">
+          <h2
+            className={[`${styles.titleStyle}`, "font-weight-light"].join(" ")}
+          >
+            Our Services
+          </h2>
+
           <div class="row">
             <div class="col-sm-4">
               <Cards

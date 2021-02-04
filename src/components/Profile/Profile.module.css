@@ -21,3 +21,10 @@
 
   /* background-color: rgb(212, 136, 49); */
 }
+
+.titleStyle {
+  /* justify-content: center;
+  align-content: center; */
+  text-align: center;
+  padding-top: 20px;
+}
