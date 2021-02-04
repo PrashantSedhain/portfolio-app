@@ -1,26 +1,37 @@
 import React, { useState } from "react";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import Hamburger from "hamburger-react";
+import "./Navbar.css";
 
 const NavbarComponent = () => {
   const [isOpen, setOpen] = useState(false);
 
   return (
-    <Navbar collapseOnSelect expand="sm" bg="light" expanded={isOpen}>
+    <Navbar
+      collapseOnSelect
+      expand="sm"
+      bg="light"
+      expanded={isOpen}
+      onToggle={(expand) => {
+        expand = !isOpen;
+      }}
+    >
       <Navbar.Brand
         style={{ fontFamily: "orbitron", fontStyle: "italic", fontSize: 20 }}
         href="/"
       >
         Liz Photography
       </Navbar.Brand>
+      <Navbar.Toggle>
+        <Hamburger
+          label="Show menu"
+          color="#4FD1C5"
+          distance="sm"
+          toggled={isOpen}
+          toggle={setOpen}
+        />
+      </Navbar.Toggle>
 
-      <Hamburger
-        label="Show menu"
-        color="#4FD1C5"
-        distance="sm"
-        toggled={isOpen}
-        toggle={setOpen}
-      />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
           <Nav.Link href="/features">Features</Nav.Link>
