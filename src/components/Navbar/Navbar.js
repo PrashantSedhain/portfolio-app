@@ -37,7 +37,7 @@ const NavbarComponent = () => {
           <Nav.Link href="/features">Features</Nav.Link>
           <Nav.Link href="/pricing">Pricing</Nav.Link>
           <NavDropdown title="Portfolio" id="collasible-nav-dropdown">
-            <NavDropdown.Item href="/portfolio/boudoir">
+            <NavDropdown.Item href="/portfolio-app/portfolio/boudoir">
               Boudoir
             </NavDropdown.Item>
             <NavDropdown.Item href="/portfolio/maternity">
