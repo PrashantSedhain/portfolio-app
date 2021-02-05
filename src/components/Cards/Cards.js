@@ -12,7 +12,7 @@ const Cards = (props) => {
     <div>
       <div className={styles.center}>
         <div className={styles.property_card}>
-          <a href="/portfolio-app/portfolio/boudoir">
+          <a href="/cth">
             <div className={imageClass}>
               <div className={`${imageClass}`}>
                 {/* <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. --> */}

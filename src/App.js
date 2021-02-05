@@ -7,7 +7,7 @@ import NavbarComponent from "../src/components/Navbar/Navbar";
 import Contact from "./screens/Contact";
 function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       <div>
         {/* <nav>
           <ul>
