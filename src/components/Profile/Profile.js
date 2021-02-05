@@ -21,39 +21,11 @@ const Profile = () => {
               >
                 <h2 className={styles.textStyle}>Meraki by Liz Photography</h2>
               </div>
-              {/* <h1 className={`font-weight-dark ${styles.mainTitle}`}>
-                Welcome To{" "}
-                <span
-                  style={{
-                    fontSize: 50,
-                    color: "#8f6868",
-                    fontFamily: "cursive",
-                  }}
-                >
-                  {" "}
-                  Meraki By Liz
-                </span>{" "}
-                Photography{" "}
-              </h1>
-              <p className={["lead", styles.subtitle].join(" ")}>
-                An Ultimate Photography Experience
-              </p> */}
             </div>
           </div>
         </div>
       </header>
 
-      {/* <section className="py-5">
-        <div className="container">
-          <h2 className="font-weight-light">Our Services</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Repellendus ab nulla dolorum autem nisi officiis blanditiis
-            voluptatem hic, assumenda aspernatur facere ipsam nemo ratione
-            cumque magnam enim fugiat reprehenderit expedita.
-          </p>
-        </div>
-      </section> */}
       <section>
         <div className="container">
           <h2
@@ -69,6 +41,7 @@ const Profile = () => {
                 title="Boudoir"
                 description="Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard."
                 classToApply={0}
+                genre="boudoir"
               />
             </div>
             <div class="col-sm-4">
@@ -76,6 +49,7 @@ const Profile = () => {
                 title="Couple"
                 description="Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard."
                 classToApply={1}
+                genre="couple"
               />
             </div>
             <div class="col-sm-4">
@@ -83,6 +57,7 @@ const Profile = () => {
                 title="Maternity"
                 description="Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard."
                 classToApply={2}
+                genre="maternity"
               />
             </div>
           </div>
