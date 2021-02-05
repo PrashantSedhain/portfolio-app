@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Profile.module.css";
 import Cards from "../Cards/Cards";
+import About from "../About/About";
 const Profile = () => {
   return (
     <div>
@@ -48,6 +49,7 @@ const Profile = () => {
           >
             Our Services
           </h2>
+          <hr />
 
           <div class="row">
             <div class="col-sm-4">
@@ -72,8 +74,20 @@ const Profile = () => {
               />
             </div>
           </div>
+
+          <h2
+            className={[`${styles.titleStyle}`, "font-weight-light"].join(" ")}
+          >
+            About
+          </h2>
+          <div className="container">
+            <hr />
+            <About />
+          </div>
         </div>
       </section>
+
+      <section></section>
     </div>
   );
 };
