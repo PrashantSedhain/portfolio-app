@@ -3,8 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import PhotoGallery from "./components/PhotoGallery";
 import Home from "../src/screens/Home";
 import About from "../src/screens/About";
-
-import NavbarComponent from "../src/components/Navbar";
+import NavbarComponent from "../src/components/Navbar/Navbar";
 import Contact from "./screens/Contact";
 function App() {
   return (

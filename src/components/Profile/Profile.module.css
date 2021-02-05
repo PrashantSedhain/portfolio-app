@@ -1,7 +1,7 @@
 .masthead {
   height: 100vh;
   min-height: 500px;
-  background-image: url("https://images.unsplash.com/photo-1505150099521-fde7970bcc3a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+  background-image: url("https://images.unsplash.com/photo-1438109491414-7198515b166b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -20,4 +20,17 @@
   font-weight: bold;
 
   /* background-color: rgb(212, 136, 49); */
+}
+
+.titleStyle {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.textStyle {
+  padding-top: 40px;
+  font-weight: lighter;
+  font-size: 20;
+  color: azure;
+  font-family: cursive;
 }
