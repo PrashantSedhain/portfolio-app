@@ -9,7 +9,19 @@ const Profile = () => {
         <div className="container h-100">
           <div className="row h-100 align-items-center">
             <div className="col-12 text-center">
-              <h1 className={`font-weight-dark ${styles.mainTitle}`}>
+              <div
+                style={{
+                  borderWidth: "3px 3px",
+                  borderColor: "white",
+                  width: "250px",
+                  height: "180px",
+                  border: "solid #FFFFFF",
+                  display: "inline-block",
+                }}
+              >
+                <h2 className={styles.textStyle}>Meraki by Liz Photography</h2>
+              </div>
+              {/* <h1 className={`font-weight-dark ${styles.mainTitle}`}>
                 Welcome To{" "}
                 <span
                   style={{
@@ -25,7 +37,7 @@ const Profile = () => {
               </h1>
               <p className={["lead", styles.subtitle].join(" ")}>
                 An Ultimate Photography Experience
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
