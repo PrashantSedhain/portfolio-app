@@ -14,3 +14,12 @@
   /* height: 200px; */
   /* border: 3px solid green; */
 }
+
+/* style={{ height: "40%", width: "80%" }} */
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: "40%";
+  width: "80%";
+}

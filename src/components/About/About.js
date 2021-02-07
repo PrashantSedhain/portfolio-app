@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
 import styles from "./About.module.css";
-
+import Logo from "../../assets/Logofolio.png";
 const button = (
   <button type="button" className={["btn", "btn-light"].join(" ")}>
     More About Me
@@ -26,6 +25,13 @@ const About = () => {
           />
         </div>
         <div className="col-sm">
+          <div className={styles.center}>
+            <img
+              style={{ height: "40%", width: "80%" }}
+              src={Logo}
+              alt="logo"
+            />
+          </div>
           <p style={{ fontWeight: "lighter", fontSize: 22, margin: 10 }}>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Repellendus ab nulla dolorum autem nisi officiis blanditiis
