@@ -3,3 +3,10 @@
   justify-content: center;
   margin: auto;
 }
+
+.buttonStyle {
+  align-items: center;
+  /* margin: 40; */
+  padding-bottom: "50px";
+  align-items: center;
+}

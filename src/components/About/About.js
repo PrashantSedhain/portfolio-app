@@ -36,6 +36,11 @@ const About = () => {
           >
             -Elizabeth-
           </p>
+          <div className={styles.buttonStyle}>
+            <button type="button" className="btn btn-info">
+              More About Me
+            </button>
+          </div>
         </div>
       </div>
     </div>

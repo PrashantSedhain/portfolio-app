@@ -1,8 +1,20 @@
 import React from "react";
+import styles from "./styles/About.module.css";
 const About = () => {
   return (
     <div className="container">
       <h1 style={{ fontWeight: "lighter", paddingTop: "10px" }}>About Me</h1>
+      <img
+        style={{
+          maxWidth: "100%",
+          maxHeight: "100%",
+          display: "block",
+          margin: "auto",
+          borderRadius: 20,
+        }}
+        src="https://images.unsplash.com/photo-1523292975372-4f1bebedbc64?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+        alt="Girl in a jacket"
+      />
       <h3 style={{ fontWeight: "lighter", paddingTop: "18px" }}>
         Introduction{" "}
       </h3>
@@ -52,7 +64,7 @@ const About = () => {
           Contact Me{" "}
         </h3>
 
-        <ul>
+        <ul className={styles.ul}>
           <li style={{ fontWeight: "lighter", fontSize: 18 }}>
             <span>
               <svg
