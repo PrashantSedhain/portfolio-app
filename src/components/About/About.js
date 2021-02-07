@@ -1,8 +1,17 @@
 import React from "react";
-import styles from "./About.css";
+import { Link } from "react-router-dom";
+
+import styles from "./About.module.css";
+
+const button = (
+  <button type="button" className={["btn", "btn-light"].join(" ")}>
+    More About Me
+  </button>
+);
+
 const About = () => {
   return (
-    <div>
+    <div style={{ paddingBottom: 50 }}>
       <div className="row">
         <div className={["col-sm", `${styles.imageStyle}`].join(" ")}>
           <img
@@ -36,10 +45,12 @@ const About = () => {
           >
             -Elizabeth-
           </p>
-          <div className={styles.buttonStyle}>
-            <button type="button" className="btn btn-info">
-              More About Me
-            </button>
+          <div className={styles.center}>
+            <Link to="/about">
+              <button type="button" className={["btn", "btn-light"].join(" ")}>
+                More About Me
+              </button>
+            </Link>
           </div>
         </div>
       </div>
