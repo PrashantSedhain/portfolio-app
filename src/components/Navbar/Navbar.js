@@ -34,7 +34,7 @@ const NavbarComponent = () => {
 
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link href="/pricing">Pricing</Nav.Link>
+          <Nav.Link href="/investment">Investment</Nav.Link>
           <NavDropdown title="Portfolio" id="collasible-nav-dropdown">
             <NavDropdown.Item href="/portfolio/boudoir">
               Boudoir
